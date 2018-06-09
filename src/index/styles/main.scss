@@ -15,17 +15,15 @@
     color: azure;
 }
 .item-wrapper {
-    margin: 0 auto;
-    min-height: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .item {
-    margin: 0.5rem auto;
+    padding: 0.5rem;
     min-height: 240px;
-    position: relative;
     &:nth-child(1) {
         background-color: rgb(254, 94, 6);
     }
@@ -49,9 +47,8 @@
     &__link {
         margin: 5% auto;
         text-align: center;
-        padding: 10%;
-        width: 70%;
-        min-height: 1%;
+        padding: 4% 0;
+        width: 50%;
         background-color: #10a064;
     }
     &__link:hover {
@@ -78,6 +75,6 @@
         flex-wrap: wrap;
     }
     .item {
-        margin: 0;
+        padding: 0.5rem;
     }
 }
