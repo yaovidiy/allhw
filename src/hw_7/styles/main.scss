@@ -1,5 +1,6 @@
+@import './variabels';
 body {
-    background:url(../../../assets/pattern.jpg);
+    background:url(../../assets/pattern.jpg);
 }
 .page-wrapper {
     display: flex;
@@ -94,12 +95,12 @@ body {
 @media (min-width: 992px) {
 .page-wrapper {
     margin: 10% auto;
-    max-width: 800px;
+    max-width: $page-max-width;
 }
 }
 @media (min-width: 1200px) {
     .page-wrapper {
         margin: 10% auto;
-        max-width: 800px;
+        max-width: $page-max-width;
     }
 }
