@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Normal';
+    src: url(../../assets/hw_5/fonts/kerola.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Light';
+    src: url(../../assets/hw_5/fonts/kerola-light.woff2) format('woff2');
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Normal', Fallback, sans-serif;
+    font-size: 14px;
+}
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    color: #1c1b1b;
+    background-color: #f8f8f9;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #1c1b1b;
+}
