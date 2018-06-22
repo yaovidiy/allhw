@@ -1,5 +1,6 @@
 export function Accordion (accordions) {
     // const accordion = document.querySelector('.accordion');
+   // const sections = Array.from(accordions.querySelectorAll('.accordion__section'));
      const header = accordions.querySelector('.accordion__header');
      const content = accordions.querySelector('.accordion__content');
      const active = 'accordion__content_active';
@@ -23,8 +24,6 @@ export function Accordion (accordions) {
      header.classList.add(activeHead); //Меняем цвет header'a
      header.classList.remove(triangleClose); // Убираем черный смотрящий влево триугольгик 
      header.classList.add(triangleOpen);// Добавляем белый смотрящий вниз треугольник
-
-
  }
  function closeAccordion() {
      content.classList.remove(active); //Закрываем скрытый контент

@@ -2,7 +2,7 @@ $accordion-heigh:50px;
 $accordion-padding:20px;
 $tansition:all 1s;
 $triengle-border:5px solid transparent;
-.box {
+.accordion {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -12,11 +12,12 @@ $triengle-border:5px solid transparent;
     border: 1px solid gray;
     justify-content: flex-start;
     align-items: center;
-}
-.accordion {
+
+&__section {
     width: 100%;
     border: 1px solid lightgray;
     position: relative;
+}
     &__header {
         width:100%;
         height: $accordion-heigh;
