@@ -21,13 +21,11 @@ export function Accordion (accordions) {
  
  function openAccordion() {
      content.classList.add(active); //Открываем скрытый контент
-     header.classList.add(activeHead); //Меняем цвет header'a
      header.classList.remove(triangleClose); // Убираем черный смотрящий влево триугольгик 
      header.classList.add(triangleOpen);// Добавляем белый смотрящий вниз треугольник
  }
  function closeAccordion() {
      content.classList.remove(active); //Закрываем скрытый контент
-     header.classList.remove(activeHead);//Меняем цвет header'a
      header.classList.remove(triangleOpen);// Убираем белый смотрящий вниз триугольгик 
      header.classList.add(triangleClose);// Добавляем черный смотрящий влево треугольник
 

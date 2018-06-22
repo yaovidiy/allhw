@@ -1,0 +1,73 @@
+$accordion-heigh:50px;
+$accordion-padding:20px;
+$tansition:all 1s;
+$triengle-border:5px solid transparent;
+.accordion {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 500px;
+    justify-content: flex-start;
+    align-items: center;
+
+&__section {
+    width: 100%;
+    border: 1px solid lightgray;
+    position: relative;
+}
+    &__header {
+        width:100%;
+        height: $accordion-heigh;
+        padding: $accordion-padding;
+        background-color: rgb(4, 149, 136);
+        transition: $tansition;
+
+    }
+    &__content {
+        height: 0px;
+        overflow: hidden;
+        transition: $tansition;
+        position: relative;
+        background-color: white;
+        color:black;
+    
+    &_active {
+        min-height: $accordion-heigh * 6;
+        padding: $accordion-padding + 80px;
+        transition: $tansition;
+    }
+    &_text {
+        display: inline-block;
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+    }
+}
+.triangle {
+    position: relative;
+    &__close {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        bottom: 16px;
+        border: $triengle-border;
+        border-top: 5px solid white;
+        }       
+    }
+    &__open {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        bottom: 16px;
+        border: $triengle-border;
+        border-bottom: 5px solid white;
+        }       
+    }
+}

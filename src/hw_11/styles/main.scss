@@ -1,78 +1,12 @@
-$accordion-heigh:50px;
-$accordion-padding:20px;
-$tansition:all 1s;
-$triengle-border:5px solid transparent;
-.accordion {
+.main {
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 10px;
-    width: 900px;
-    min-height: 500px;
-    border: 1px solid gray;
-    justify-content: flex-start;
-    align-items: center;
-
-&__section {
-    width: 100%;
-    border: 1px solid lightgray;
-    position: relative;
 }
-    &__header {
-        width:100%;
-        height: $accordion-heigh;
-        padding: $accordion-padding;
-        background-color: gainsboro;
-        transition: $tansition;
-        &_active {
-            background-color: blue;
-            color: white;
-            transition: $tansition;
-        }
-    }
-    &__content {
-        height: 0px;
-        overflow: hidden;
-        transition: $tansition;
-        position: relative;
-    
-    &_active {
-        height: $accordion-heigh * 6;
-        padding: $accordion-padding + 80px;
-        transition: $tansition;
-    }
-    &_text {
-        display: inline-block;
-        width: 70%;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
-    }
-    }
-}
-.triangle {
-    position: relative;
-    &__close {
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        left: 5px;
-        bottom: 16px;
-        border: $triengle-border;
-        border-left: 5px solid black;
-        }       
-    }
-    &__open {
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        left: 5px;
-        bottom: 16px;
-        border: $triengle-border;
-        border-top: 5px solid white;
-        }       
-    }
-}
+.header{
+    min-height: 50px;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+} 
