@@ -1,0 +1,53 @@
+[33mcommit a1217b98f65acb893b8667e55dfd85c171ac4b26[m
+Author: yaovidiy <yaovdiy@google.com>
+Date:   Fri Jun 22 16:09:52 2018 +0300
+
+    made accordion as in example for home the work
+
+[33mcommit 602b9edb47776d5893cacbfd67597461d9003452[m
+Author: yaovidiy <yaovdiy@google.com>
+Date:   Fri Jun 22 15:41:43 2018 +0300
+
+    Переместил сетку и переменные в common, добавил  адаптивности.
+
+[33mcommit 1529e6a8e926abc4a377b62b25a86d093a25a616[m
+Author: yaovidiy <yaovdiy@google.com>
+Date:   Fri Jun 22 14:27:54 2018 +0300
+
+    Сделал аккордион, открывается и закрывается все секции
+
+[33mcommit 1fcd7d0773596374ced8694cac0ddd0e1d553f18[m
+Author: yaovidiy <yaovdiy@google.com>
+Date:   Fri Jun 22 13:29:13 2018 +0300
+
+    Made accordion with 1 section
+
+[33mcommit 7797443b428e5f3460796430104b4a8de419c2c1[m
+Author: yaovidiy <yaovdiy@gmail.com>
+Date:   Thu Jun 21 23:09:56 2018 +0300
+
+    start hw_11
+
+[33mcommit 99291f4e4e45c0150656ca0bd012e960f8016e0d[m
+Author: yaovidiy <yaovdiy@gmail.com>
+Date:   Thu Jun 21 21:10:13 2018 +0300
+
+    update base.js
+
+[33mcommit c31472a76359d42ddff395221a4f5cf5655a75a8[m
+Author: yaovidiy <yaovdiy@gmail.com>
+Date:   Thu Jun 21 21:08:31 2018 +0300
+
+    standart start for hw_11
+
+[33mcommit 8b6e203d7aea67c4807a5ff3432a401251f4b1fb[m
+Author: yaovidiy <yaovdiy@gmail.com>
+Date:   Thu Jun 21 20:57:32 2018 +0300
+
+    added hw_11
+
+[33mcommit fc121f4cb54830742876cd43822cd3645c433565[m
+Author: yaovidiy <yaovdiy@google.com>
+Date:   Thu Jun 21 18:02:01 2018 +0300
+
+    new init, up to hw_10
