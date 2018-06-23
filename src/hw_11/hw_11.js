@@ -5,4 +5,3 @@ let accordiones = document.querySelectorAll('.accordion__section');
 for (let i = 0; i < accordiones.length; i++) {
     Accordion(accordiones[i]);    
 }
-//Accordion();
