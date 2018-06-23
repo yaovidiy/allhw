@@ -1,14 +1,10 @@
-$accordion-heigh:50px;
-$accordion-padding:20px;
-$tansition:all 1s;
-$triengle-border:5px solid transparent;
+@import './var.scss';
+@import './mixins.scss';
+@import '../../common/styles/mixin.scss';
 .accordion {
-    display: flex;
-    flex-direction: column;
+    @include flexColumnStartCenter;
     padding: 10px;
     min-height: 500px;
-    justify-content: flex-start;
-    align-items: center;
 
 &__section {
     width: 100%;
@@ -17,9 +13,9 @@ $triengle-border:5px solid transparent;
 }
     &__header {
         width:100%;
-        height: $accordion-heigh;
+        min-height: $accordion-heigh;
         padding: $accordion-padding;
-        background-color: rgb(4, 149, 136);
+        background-color: $header-backgound-color;
         transition: $tansition;
 
     }
@@ -39,10 +35,7 @@ $triengle-border:5px solid transparent;
     &_text {
         display: inline-block;
         width: 70%;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
+       @include absoluteCenter;
     }
     }
 }
@@ -52,22 +45,18 @@ $triengle-border:5px solid transparent;
     position: relative;
     &::after {
         content: '';
-        position: absolute;
-        left: 5px;
-        bottom: 16px;
+        @include trienglePosition;
         border: $triengle-border;
-        border-top: 5px solid white;
+        border-top: $triengle-border-after;
         }       
     }
     &__open {
     position: relative;
     &::after {
         content: '';
-        position: absolute;
-        left: 5px;
-        bottom: 16px;
+       @include trienglePosition;
         border: $triengle-border;
-        border-bottom: 5px solid white;
+        border-bottom: $triengle-border-after;
         }       
     }
 }
