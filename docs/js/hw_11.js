@@ -9075,7 +9075,6 @@ var accordiones = document.querySelectorAll('.accordion__section');
 for (var i = 0; i < accordiones.length; i++) {
     (0, _func.Accordion)(accordiones[i]);
 }
-//Accordion();
 
 /***/ }),
 /* 348 */
@@ -9091,39 +9090,30 @@ for (var i = 0; i < accordiones.length; i++) {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+       value: true
 });
 exports.Accordion = Accordion;
 function Accordion(accordions) {
-    // const accordion = document.querySelector('.accordion');
-    // const sections = Array.from(accordions.querySelectorAll('.accordion__section'));
-    var header = accordions.querySelector('.accordion__header');
-    var content = accordions.querySelector('.accordion__content');
-    var active = 'accordion__content_active';
-    var activeHead = 'accordion__header_active';
-    var triangleOpen = 'triangle__open';
-    var triangleClose = 'triangle__close';
-    var state = 'close';
-    header.addEventListener('click', function () {
-        if (state === 'open') {
-            closeAccordion();
-            state = 'close';
-        } else {
-            openAccordion();
-            state = 'open';
-        }
-    });
+       var header = accordions.querySelector('.accordion__header');
+       var content = accordions.querySelector('.accordion__content');
+       var active = 'accordion__content_active';
+       var triangleOpen = 'triangle__open';
+       var triangleClose = 'triangle__close';
+       header.addEventListener('click', function () {
+              openAccordion();
+       });
+       function openAccordion() {
+              var activeAccordion = document.querySelector('.accordion__content_active'); //Ищем активный элемент
+              var activePerent = activeAccordion.parentElement; //Выходим на его родителя accordion__section
+              var activeHeader = activePerent.children[0]; //Выбираем первый дочерний элемент accorion__header
+              activeHeader.classList.remove(triangleOpen); //Убираем у активного иконку открытого треуголнька
+              activeHeader.classList.add(triangleClose); //Добавляем закрытый треугольник
+              activeAccordion.classList.remove(active); //Закрываем открытый элемент
 
-    function openAccordion() {
-        content.classList.add(active); //Открываем скрытый контент
-        header.classList.remove(triangleClose); // Убираем черный смотрящий влево триугольгик 
-        header.classList.add(triangleOpen); // Добавляем белый смотрящий вниз треугольник
-    }
-    function closeAccordion() {
-        content.classList.remove(active); //Закрываем скрытый контент
-        header.classList.remove(triangleOpen); // Убираем белый смотрящий вниз триугольгик 
-        header.classList.add(triangleClose); // Добавляем черный смотрящий влево треугольник
-    }
+              content.classList.add(active); //Открываем скрытый контент
+              header.classList.remove(triangleClose); // Убираем белый смотрящий вверх триугольгик 
+              header.classList.add(triangleOpen); // Добавляем белый смотрящий вниз треугольник
+       }
 }
 
 /***/ })
