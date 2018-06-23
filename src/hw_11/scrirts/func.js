@@ -14,6 +14,7 @@ export function Accordion (accordions) {
     activeHeader.classList.remove(triangleOpen);//Убираем у активного иконку открытого треуголнька
     activeHeader.classList.add(triangleClose);//Добавляем закрытый треугольник
      activeAccordion.classList.remove(active);//Закрываем открытый элемент
+     
      content.classList.add(active); //Открываем скрытый контент
      header.classList.remove(triangleClose); // Убираем белый смотрящий вверх триугольгик 
      header.classList.add(triangleOpen);// Добавляем белый смотрящий вниз треугольник
