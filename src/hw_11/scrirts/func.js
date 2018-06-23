@@ -6,25 +6,18 @@ export function Accordion (accordions) {
      const active = 'accordion__content_active';
      const triangleOpen = 'triangle__open';
      const triangleClose = 'triangle__close';
-     let activeAccordion = document.querySelector(active);
      header.addEventListener('click', function(){
             openAccordion();              
          
      });
  
  function openAccordion() {
-     if (activeAccordion){
+    let activeAccordion = document.querySelector('.accordion__content_active');
      activeAccordion.classList.remove(active);    
      content.classList.add(active); //Открываем скрытый контент
      header.classList.remove(triangleClose); // Убираем белый смотрящий вверх триугольгик 
      header.classList.add(triangleOpen);// Добавляем белый смотрящий вниз треугольник
      }
-     else {
-        content.classList.add(active); //Открываем скрытый контент
-        header.classList.remove(triangleClose); // Убираем белый смотрящий вверх триугольгик 
-        header.classList.add(triangleOpen);// Добавляем белый смотрящий вниз треугольник            
-     }
      
- }
  
  }
