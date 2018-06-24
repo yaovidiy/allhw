@@ -9069,11 +9069,11 @@ module.exports = __webpack_require__(347);
 
 __webpack_require__(348);
 
-var _func = __webpack_require__(349);
+var _main = __webpack_require__(349);
 
-var accordiones = document.querySelectorAll('.accordion__section');
+var accordiones = document.querySelectorAll('.accordion');
 for (var i = 0; i < accordiones.length; i++) {
-    (0, _func.Accordion)(accordiones[i]);
+    (0, _main.accordion)(accordiones[i]);
 }
 
 /***/ }),
@@ -9090,30 +9090,45 @@ for (var i = 0; i < accordiones.length; i++) {
 
 
 Object.defineProperty(exports, "__esModule", {
-       value: true
+    value: true
 });
-exports.Accordion = Accordion;
-function Accordion(accordions) {
-       var header = accordions.querySelector('.accordion__header');
-       var content = accordions.querySelector('.accordion__content');
-       var active = 'accordion__content_active';
-       var triangleOpen = 'triangle__open';
-       var triangleClose = 'triangle__close';
-       header.addEventListener('click', function () {
-              openAccordion();
-       });
-       function openAccordion() {
-              var activeAccordion = document.querySelector('.accordion__content_active'); //Ищем активный элемент
-              var activePerent = activeAccordion.parentElement; //Выходим на его родителя accordion__section
-              var activeHeader = activePerent.children[0]; //Выбираем первый дочерний элемент accorion__header
-              activeHeader.classList.remove(triangleOpen); //Убираем у активного иконку открытого треуголнька
-              activeHeader.classList.add(triangleClose); //Добавляем закрытый треугольник
-              activeAccordion.classList.remove(active); //Закрываем открытый элемент
+exports.accordion = accordion;
+function accordion(accordion) {
+    var header = Array.from(accordion.querySelectorAll('.accordion__header'));
+    var active = 'accordion__content_active';
+    var triangleOpen = 'triangle__open';
+    var triangleClose = 'triangle__close';
+    var activeAcordion = void 0;
+    var activingAcordion = void 0;
+    var activeHeader = void 0;
 
-              content.classList.add(active); //Открываем скрытый контент
-              header.classList.remove(triangleClose); // Убираем белый смотрящий вверх триугольгик 
-              header.classList.add(triangleOpen); // Добавляем белый смотрящий вниз треугольник
-       }
+    var _loop = function _loop(i) {
+        header[i].addEventListener('click', function () {
+            var section = header[i].parentElement;
+            activeAcordion = accordion.querySelector('.accordion__content_active');
+            activeHeader = accordion.querySelector('.triangle__open');
+            activingAcordion = section.children[1];
+            if (activeAcordion === activingAcordion) {
+                header[i].classList.remove(triangleOpen);
+                header[i].classList.add(triangleClose);
+                activingAcordion.classList.remove(active);
+            } else if (activeAcordion === null) {
+                header[i].classList.remove(triangleClose);
+                header[i].classList.add(triangleOpen);
+                activingAcordion.classList.add(active);
+            } else {
+                activeAcordion.classList.remove(active);
+                activeHeader.classList.remove(triangleOpen);
+                activeHeader.classList.add(triangleClose);
+                header[i].classList.add(triangleOpen);
+                activingAcordion.classList.add(active);
+            }
+        });
+    };
+
+    for (var i = 0; i < header.length; i++) {
+        _loop(i);
+    }
 }
 
 /***/ })
