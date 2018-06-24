@@ -5,7 +5,8 @@
     src: local('Material Icons'),
          local('MaterialIcons-Regular'),
          url(../../assets/hw_11/fonts/iconfont/MaterialIcons-Regular.woff) format('woff'),
-         url(../../assets/hw_11/fonts/iconfont/MaterialIcons-Regular.woff2) format ('woff2');
+         url(../../assets/hw_11/fonts/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+         url(../../assets/hw_11/fonts/iconfont/MaterialIcons-Regular.ttf) format('truetype'); 
  }
  * {
     box-sizing: border-box;
