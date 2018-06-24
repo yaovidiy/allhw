@@ -1,7 +1,7 @@
 import './hw_11.scss';
-import { Accordion } from './scrirts/func';
+import { accordion } from './scrirts/main';
 
-let accordiones = document.querySelectorAll('.accordion__section');
-for (let i = 0; i < accordiones.length; i++) {
-    Accordion(accordiones[i]);    
+let accordiones = document.querySelectorAll('.accordion');
+for (let i = 0; i < accordiones.length; i++){
+    accordion(accordiones[i]);
 }
