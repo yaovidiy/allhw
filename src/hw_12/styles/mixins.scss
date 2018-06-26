@@ -1,0 +1,10 @@
+@mixin trienglePosition {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+@mixin icon {
+       content: '\e316';
+       font-size: 24px;
+       font-family: 'Material Icons';
+}

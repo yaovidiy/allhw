@@ -1,0 +1,62 @@
+@import './var.scss';
+@import './mixins.scss';
+@import '../../common/styles/mixin.scss';
+.accordion {
+    @include flexColumnStartCenter;
+    padding: 10px;
+    min-height: 500px;
+
+&__section {
+    width: 100%;
+    border: 1px solid lightgray;
+    position: relative;
+}
+    &__header {
+        width:100%;
+        min-height: $accordion-heigh;
+        padding: $accordion-padding;
+        background-color: $header-backgound-color;
+        transition: $tansition;
+
+    }
+    &__content {
+        height: 0px;
+        overflow: hidden;
+        transition: $tansition;
+        position: relative;
+        background-color: white;
+        color:black;
+    
+    &_active {
+        min-height: $accordion-heigh * 6;
+        padding: $accordion-padding + 80px;
+        transition: $tansition;
+    }
+    &_text {
+        display: inline-block;
+        width: 70%;
+       @include absoluteCenter;
+    }
+    }
+}
+.triangle {
+    position: relative;
+    &__close {
+    position: relative;
+    &::after {
+        @include trienglePosition;
+        @include icon;
+        transform: rotate(180deg);
+        transition: all 0.5s;
+        }       
+    }
+    &__open {
+    position: relative;
+    &::after {
+       @include trienglePosition;
+       @include icon;   
+       transform: rotate(0deg);
+       transition: all 0.5s;
+        }       
+    }
+}
