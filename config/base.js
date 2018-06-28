@@ -14,7 +14,7 @@ const baseConf = (_path) => {
         hw_5: ['babel-polyfill', './src/hw_5/hw_5.js'],
         inv: ['babel-polyfill', './src/inv/inv.js'],
         hw_9: ['babel-polyfill', './src/hw_9/hw_9.js'],
-        lesson_10: ['babel-polyfill', './src/lesson_10/lesson_10.js'],
+        hw_10: ['babel-polyfill', './src/hw_10/hw_10.js'],
         hw_11: ['babel-polyfill', './src/hw_11/hw_11.js'],    
         hw_12: ['babel-polyfill', './src/hw_12/hw_12.js'],    
     };

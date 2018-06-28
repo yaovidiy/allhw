@@ -1,2 +1,2 @@
-import './lesson_10.scss';
+import './hw_10.scss';
 import './scripts/isEmpty.js';
