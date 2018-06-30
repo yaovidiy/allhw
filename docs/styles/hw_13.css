@@ -1,33 +1,56 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(../assets/fonts/MaterialIcons-Regular.woff) format("woff"), url(../assets/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../assets/fonts/MaterialIcons-Regular.ttf) format("truetype"); }
-
 * {
   box-sizing: border-box; }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  color: white; }
-
-body {
-  background-color: #455963; }
-
-.main {
-  padding: 10px;
-  max-width: 980px;
+.conteiner {
   margin: 0 auto;
+  min-height: 300px;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10%;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.lighter {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 40px;
+  height: 20%;
+  margin-left: 1%; }
+  .lighter__light {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 80%;
+    height: 40%;
+    margin-bottom: 10px;
+    background-color: #d0e1f1; }
+  .lighter__active-light {
+    background-color: #ee2; }
+  .lighter__button {
+    width: 100%;
+    height: 20%;
+    background-color: #d0e1f1; }
+  .lighter__button:focus {
+    outline: none; }
+  .lighter__add {
+    margin-left: 1%;
+    height: 130px;
+    width: 100px;
+    background-color: #d0e1f1; }
+  .lighter__add:focus {
+    outline: none; }
 
-.header {
-  min-height: 50px;
-  border-bottom: 1px solid lightgray;
-  text-align: center; }
+.active-btn {
+  background-color: #29fd2f; }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative; }
@@ -145,71 +168,3 @@ body {
     width: 16.66667%; }
   .col-lg-1 {
     width: 8.33333%; } }
-
-.accordion {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 10px;
-  min-height: 500px; }
-  .accordion__section {
-    width: 100%;
-    border: 1px solid lightgray;
-    position: relative; }
-  .accordion__header {
-    width: 100%;
-    min-height: 50px;
-    padding: 20px;
-    background-color: #049588;
-    transition: all 1s; }
-  .accordion__content {
-    height: 0px;
-    overflow: hidden;
-    transition: all 1s;
-    position: relative;
-    background-color: white;
-    color: black; }
-    .accordion__content_active {
-      min-height: 300px;
-      padding: 100px;
-      transition: all 1s; }
-    .accordion__content_text {
-      display: inline-block;
-      width: 70%;
-      position: absolute;
-      left: 50%;
-      right: 50%;
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.triangle {
-  position: relative; }
-  .triangle__close {
-    position: relative; }
-    .triangle__close::after {
-      position: absolute;
-      right: 15px;
-      bottom: 15px;
-      content: '\E316';
-      font-size: 24px;
-      font-family: 'Material Icons';
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-      transition: all 0.5s; }
-  .triangle__open {
-    position: relative; }
-    .triangle__open::after {
-      position: absolute;
-      right: 15px;
-      bottom: 15px;
-      content: '\E316';
-      font-size: 24px;
-      font-family: 'Material Icons';
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-      transition: all 0.5s; }

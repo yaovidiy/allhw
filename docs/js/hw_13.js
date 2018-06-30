@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 328);
+/******/ 	return __webpack_require__(__webpack_require__.s = 355);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9034,28 +9034,181 @@ module.exports = function (regExp, replace) {
 
 
 /***/ }),
-/* 327 */,
-/* 328 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(125);
-module.exports = __webpack_require__(329);
-
-
-/***/ }),
-/* 329 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(330);
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ligther = ligther;
+function ligther(target) {
+    var main = document.createElement('div');
+    var circl = document.createElement('section');
+    var button = document.createElement('button');
+    var active_btn = 'active-btn';
+    var active_light = 'lighter__active-light';
+
+    main.classList.add('lighter');
+    circl.classList.add('lighter__light');
+    button.classList.add('lighter__button');
+
+    button.innerHTML = 'on/off';
+
+    target.insertBefore(main, target.firstChild);
+    main.appendChild(circl);
+    main.appendChild(button);
+
+    function active() {
+        button.classList.add(active_btn);
+        main.classList.add('active');
+        circl.classList.add(active_light);
+    }
+    function disable() {
+        button.classList.remove(active_btn);
+        main.classList.remove('active');
+        circl.classList.remove(active_light);
+    }
+
+    button.addEventListener('click', function () {
+        var stat = main.querySelector('.active-btn');
+        if (stat === null) {
+            active();
+        } else {
+            disable();
+        }
+    });
+}
 
 /***/ }),
-/* 330 */
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(125);
+module.exports = __webpack_require__(356);
+
+
+/***/ }),
+/* 356 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(357);
+
+var _lighter = __webpack_require__(327);
+
+var _addlighter = __webpack_require__(358);
+
+var _lightertoogle = __webpack_require__(359);
+
+var target = document.querySelector('.conteiner');
+
+for (var i = 0; i < 5; i++) {
+    (0, _lighter.ligther)(target);
+}
+(0, _addlighter.addligghter)(target);
+(0, _lightertoogle.ligtertoogle)(target);
+
+/***/ }),
+/* 357 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.addligghter = addligghter;
+
+var _lighter = __webpack_require__(327);
+
+function addligghter(target) {
+    var button = document.createElement('button');
+    button.classList.add('lighter__add');
+    button.innerHTML = 'Add lighter';
+
+    target.appendChild(button);
+    button.addEventListener('click', function () {
+        (0, _lighter.ligther)(target);
+    });
+}
+
+/***/ }),
+/* 359 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.ligtertoogle = ligtertoogle;
+function ligtertoogle(target) {
+    var button = document.createElement('button');
+    button.classList.add('lighter__add');
+    button.innerHTML = 'Toogle All';
+    var circle_active = 'lighter__active-light';
+    var btn_active = 'active-btn';
+
+    target.appendChild(button);
+
+    button.addEventListener('click', function () {
+        var active = Array.from(target.querySelectorAll('.active'));
+        var lights = Array.from(target.querySelectorAll('.lighter'));
+        if (active.length === 0) {
+            for (var i = 0; i < lights.length; i++) {
+                lights[i].classList.add('active');
+                lights[i].childNodes[0].classList.add(circle_active);
+                lights[i].childNodes[1].classList.add(btn_active);
+            }
+        } else {
+            for (var _i = 0; _i < active.length; _i++) {
+                active[_i].classList.remove('active');
+                active[_i].childNodes[0].classList.remove(circle_active);
+                active[_i].childNodes[1].classList.remove(btn_active);
+            }
+        }
+    });
+}
 
 /***/ })
 /******/ ]);

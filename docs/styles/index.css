@@ -39,6 +39,10 @@
     background-color: wheat; }
   .item:nth-child(4) {
     background-color: bisque; }
+  .item:nth-child(5) {
+    background-color: gold; }
+  .item:nth-child(6) {
+    background-color: #fe5e06; }
   .item__header {
     text-align: center;
     padding-top: 20px;
