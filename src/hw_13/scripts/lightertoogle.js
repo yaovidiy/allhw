@@ -1,5 +1,6 @@
 export function ligtertoogle (target) {
     const button = document.createElement('button');
+    button.classList.add('col-md-3');
     button.classList.add('lighter__add');
     button.innerHTML = 'Toogle All';
     const circle_active ='lighter__active-light-one';

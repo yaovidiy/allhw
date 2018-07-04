@@ -5,7 +5,7 @@ export function ligther (target) {
     const active_btn = 'active-btn';
     const active_light_one = 'lighter__active-light-one';
     const active_light_two = 'lighter__active-light-two';
-    const grid1 = 'col-xs-1';
+    const grid1 = 'col-md-1';
     let color = 1;
 
     main.classList.add('lighter');
