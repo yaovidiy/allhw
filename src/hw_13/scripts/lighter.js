@@ -32,7 +32,8 @@ export function ligther (target) {
     function disable () {
         button.classList.remove(active_btn);
         main.classList.remove('active');
-        circl.classList.remove(active_light);
+        circl.classList.remove(active_light_one);
+        circl.classList.remove(active_light_two);
     }
 
     button.addEventListener('click', ()=>{
