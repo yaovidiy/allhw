@@ -14,8 +14,11 @@
         margin-bottom: 10px;
         background-color: rgb(208, 225, 241);
     }
-    &__active-light {
+    &__active-light-one {
         background-color: #ee2;
+    }
+    &__active-light-two {
+        background-color: blue;
     }
     &__button {
         width: 100%;

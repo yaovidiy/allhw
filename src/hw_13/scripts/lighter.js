@@ -3,7 +3,9 @@ export function ligther (target) {
     const circl = document.createElement('section');
     const button = document.createElement('button');
     const active_btn = 'active-btn';
-    const active_light = 'lighter__active-light';
+    const active_light_one = 'lighter__active-light-one';
+    const active_light_two = 'lighter__active-light-two';
+    let color = 1;
 
     main.classList.add('lighter');
     circl.classList.add('lighter__light');
@@ -18,7 +20,14 @@ export function ligther (target) {
     function active () {
         button.classList.add(active_btn);
         main.classList.add('active');
-        circl.classList.add(active_light);
+        if (color === 1){
+        circl.classList.add(active_light_one);
+        color = 2;
+        } else {
+        circl.classList.add(active_light_two);
+        color =1;
+        }
+        console.log(color);
     }
     function disable () {
         button.classList.remove(active_btn);
