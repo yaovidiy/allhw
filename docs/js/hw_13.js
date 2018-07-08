@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 355);
+/******/ 	return __webpack_require__(__webpack_require__.s = 367);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9034,7 +9034,13 @@ module.exports = function (regExp, replace) {
 
 
 /***/ }),
-/* 327 */
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9049,10 +9055,14 @@ function ligther(target) {
     var circl = document.createElement('section');
     var button = document.createElement('button');
     var active_btn = 'active-btn';
-    var active_light = 'lighter__active-light';
+    var active_light_one = 'lighter__active-light-one';
+    var active_light_two = 'lighter__active-light-two';
+    var grid1 = 'col-md-1';
+    var color = 1;
 
     main.classList.add('lighter');
     circl.classList.add('lighter__light');
+    main.classList.add(grid1);
     button.classList.add('lighter__button');
 
     button.innerHTML = 'on/off';
@@ -9064,12 +9074,20 @@ function ligther(target) {
     function active() {
         button.classList.add(active_btn);
         main.classList.add('active');
-        circl.classList.add(active_light);
+        if (color === 1) {
+            circl.classList.add(active_light_one);
+            color = 2;
+        } else {
+            circl.classList.add(active_light_two);
+            color = 1;
+        }
+        console.log(color);
     }
     function disable() {
         button.classList.remove(active_btn);
         main.classList.remove('active');
-        circl.classList.remove(active_light);
+        circl.classList.remove(active_light_one);
+        circl.classList.remove(active_light_two);
     }
 
     button.addEventListener('click', function () {
@@ -9083,12 +9101,6 @@ function ligther(target) {
 }
 
 /***/ }),
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
 /* 334 */,
 /* 335 */,
 /* 336 */,
@@ -9110,27 +9122,39 @@ function ligther(target) {
 /* 352 */,
 /* 353 */,
 /* 354 */,
-/* 355 */
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(356);
+module.exports = __webpack_require__(368);
 
 
 /***/ }),
-/* 356 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(357);
+__webpack_require__(369);
 
-var _lighter = __webpack_require__(327);
+var _lighter = __webpack_require__(333);
 
-var _addlighter = __webpack_require__(358);
+var _addlighter = __webpack_require__(370);
 
-var _lightertoogle = __webpack_require__(359);
+var _lightertoogle = __webpack_require__(371);
 
 var target = document.querySelector('.conteiner');
 
@@ -9141,13 +9165,13 @@ for (var i = 0; i < 5; i++) {
 (0, _lightertoogle.ligtertoogle)(target);
 
 /***/ }),
-/* 357 */
+/* 369 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 358 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9158,11 +9182,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.addligghter = addligghter;
 
-var _lighter = __webpack_require__(327);
+var _lighter = __webpack_require__(333);
 
 function addligghter(target) {
     var button = document.createElement('button');
     button.classList.add('lighter__add');
+    button.classList.add('col-md-3');
     button.innerHTML = 'Add lighter';
 
     target.appendChild(button);
@@ -9172,7 +9197,7 @@ function addligghter(target) {
 }
 
 /***/ }),
-/* 359 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9184,9 +9209,11 @@ Object.defineProperty(exports, "__esModule", {
 exports.ligtertoogle = ligtertoogle;
 function ligtertoogle(target) {
     var button = document.createElement('button');
+    button.classList.add('col-md-3');
     button.classList.add('lighter__add');
     button.innerHTML = 'Toogle All';
-    var circle_active = 'lighter__active-light';
+    var circle_active = 'lighter__active-light-one';
+    var circle_active_two = 'lighter__active-light-two';
     var btn_active = 'active-btn';
 
     target.appendChild(button);
@@ -9204,6 +9231,7 @@ function ligtertoogle(target) {
             for (var _i = 0; _i < active.length; _i++) {
                 active[_i].classList.remove('active');
                 active[_i].childNodes[0].classList.remove(circle_active);
+                active[_i].childNodes[0].classList.remove(circle_active_two);
                 active[_i].childNodes[1].classList.remove(btn_active);
             }
         }
