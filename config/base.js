@@ -18,6 +18,7 @@ const baseConf = (_path) => {
         hw_11: ['babel-polyfill', './src/hw_11/hw_11.js'],    
         hw_12: ['babel-polyfill', './src/hw_12/hw_12.js'],    
         hw_13: ['babel-polyfill', './src/hw_13/hw_13.js'],            
+        hw_15: ['babel-polyfill', './src/hw_15/hw_15.js'],            
         finale: ['babel-polyfill', './src/finale/finale.js'],            
     };
 
