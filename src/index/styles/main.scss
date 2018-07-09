@@ -24,23 +24,11 @@
 .item {
     padding: 0.5rem;
     min-height: 240px;
-    &:nth-child(1) {
-        background-color: rgb(254, 94, 6);
+    &:nth-child(2n) {
+        background-color: rgb(252, 208, 184);
     }
-    &:nth-child(2) {
+    &:nth-child(2n+1) {
         background-color: gold;
-    }
-    &:nth-child(3){
-        background-color: wheat;;
-    }
-    &:nth-child(4){
-        background-color: bisque;
-    }
-    &:nth-child(5){
-        background-color: gold;
-    }
-    &:nth-child(6){
-        background-color: rgb(254, 94, 6);
     }
     &__header {
         text-align: center;

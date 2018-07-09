@@ -6,6 +6,10 @@ export function ligther (target) {
     const active_light = 'lighter__active-light';
 
     main.classList.add('lighter');
+    main.classList.add('col-md-1');
+    main.classList.add('col-lg-1');
+    main.classList.add('col-xs-1');
+    main.classList.add('col-sm-1');
     circl.classList.add('lighter__light');
     button.classList.add('lighter__button');
 
