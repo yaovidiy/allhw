@@ -1,5 +1,6 @@
 export function ligtertoogle (target) {
     const button = document.createElement('button');
+    button.classList.add('col-md-3');
     button.classList.add('lighter__add');
     button.classList.add('lighter__add');
     button.classList.add('col-md-3');
@@ -7,7 +8,8 @@ export function ligtertoogle (target) {
     button.classList.add('col-xs-3');
     button.classList.add('col-sm-3');
     button.innerHTML = 'Toogle All';
-    const circle_active ='lighter__active-light';
+    const circle_active ='lighter__active-light-one';
+    const circle_active_two ='lighter__active-light-two';
     const btn_active = 'active-btn';
 
     target.appendChild(button);
@@ -26,6 +28,7 @@ export function ligtertoogle (target) {
        for (let i = 0; i < active.length; i++){
            active[i].classList.remove('active');
            active[i].childNodes[0].classList.remove(circle_active);
+           active[i].childNodes[0].classList.remove(circle_active_two);
            active[i].childNodes[1].classList.remove(btn_active);
        }
     }
