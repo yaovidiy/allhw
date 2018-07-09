@@ -59,8 +59,8 @@ export class Comm extends React.Component {
         return <div className="comments">
         <div className="addSection">
         <form  onSubmit={this.submitForm.bind(this)}>
-           <input placeholder="Ваше имя" type="text" className="addSection__author"  onInput={this.inputHandlerAuthor.bind(this)}/>
-           <textarea placeholder="Ваш комментарий" name="" id=""  ls="30" rows="10" className="addSection__comment" onInput={this.inputHandlerText.bind(this)}></textarea>
+           <input type="text" className="addSection__author"  onInput={this.inputHandlerAuthor.bind(this)}/>
+           <textarea name="" id=""  ls="30" rows="10" className="addSection__comment" onInput={this.inputHandlerText.bind(this)}></textarea>
            <button className="addSection__addButton">Add comments</button> 
         </form>
         </div>
