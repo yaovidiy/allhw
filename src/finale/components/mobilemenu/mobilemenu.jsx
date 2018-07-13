@@ -2,14 +2,6 @@ import * as React from 'react';
 import './mobilemenu.scss';
 
 export class ActiveMobileMenu extends React.Component {
-    toogleMenu() {
-        const menu = document.querySelector(".hidden");
-        if (munu.className === "hidden__active"){
-        menu.className = "hidden";
-        } else {
-        menu.className = "hidden__active";
-        }
-    }
     changeColor(e){
         const target = e.target;
         let active = document.querySelector(".mobile-menu__item-active");
@@ -49,13 +41,38 @@ export class ActiveMobileMenu extends React.Component {
             menu.push(menuItem);      
         });
         return <div className="mobile-menu">
-        <div onClick={this.toogleMenu.bind(this)} className="mobile-menu__close">
-        <div className="mobile-menu__close-item"></div>
-        <div className="mobile-menu__close-item"></div>
-        </div>
             <div className="mobile-menu__icon">
             </div>
             { menu }
+        </div>
+    }
+}
+export class Menu extends React.Component {
+    toogleMenu() {
+        const menu = document.querySelector(".hidden");
+        const bar = Array.from(document.querySelectorAll(".menu-bar__line"));
+        console.log(bar);
+        if (menu.className === "hidden hidden__active"){
+        menu.className = "hidden";
+        bar.forEach((elem)=>{
+        elem.className = "menu-bar__line";
+        });
+        } else {
+        bar.forEach((elem)=>{
+         elem.className = "menu-bar__line menu-bar__active";
+        })
+        menu.className = "hidden hidden__active";
+        }
+    }
+    render(){
+        return  <div> <img src="./assets/images/fleetster-logo.png" alt="logo" />
+        <div className="menu-bar" onClick={ this.toogleMenu.bind(this) }>
+            <div className="menu-bar__line"></div>
+            <div className="menu-bar__line"></div>
+        </div>
+        <h1 className="menu-text">
+        Find your ideal car from 500+ cars
+        </h1>
         </div>
     }
 }

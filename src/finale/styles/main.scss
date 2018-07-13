@@ -1,3 +1,4 @@
+$deg:40deg;
 .page-wrapper {
     width: 100%;
     min-height: 500px;
@@ -6,9 +7,9 @@
 }
 .page-header {
     min-height: 100px;
-    object-fit: contain;
     background-color: black;
     text-align: center;
+    color: white;
 }
 .menu-bar {
     position: absolute;
@@ -16,12 +17,25 @@
     height: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     left: 1%;
     top: 1%;
     &__line {
+        transition: all 0.5s;
         width: 40px;
         height: 5px;
-        background-color: white
+        background-color: white;
+        margin-bottom: 5px;
+    }
+    &__active {
+        transition: all 0.5s;
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        transform: rotate(-$deg);
+        background-color: white;
+        &:nth-child(2){
+        transform: rotate($deg);
+        }
     }
 }
