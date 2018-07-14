@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './mobilemenu.scss';
+//import './mobilemenu.scss';
 
 export class ActiveMobileMenu extends React.Component {
     changeColor(e){
@@ -13,26 +13,7 @@ export class ActiveMobileMenu extends React.Component {
         }  
     }
     render(){
-        const items = [
-        {title:"ABOUT",
-         index:1    
-        },
-        {title:"CONTACT",
-         index:2
-        },
-        {title:"FAQS",
-         index:3
-        },
-        {title:"MANAGE BOOKING",
-         index:4
-        },
-        {title:"SIGN IN",
-         index:5 
-        },
-        {title:"REGISTER",
-         index:6
-        }
-        ];
+        const items = this.props.data;
         const menu = [];
         items.forEach((item) =>{
                 const menuItem = <div onClick={ this.changeColor.bind(this) } key={ item.index } className="mobile-menu__item">
@@ -49,11 +30,10 @@ export class ActiveMobileMenu extends React.Component {
 }
 export class Menu extends React.Component {
     toogleMenu() {
-        const menu = document.querySelector(".hidden");
+        const menu = document.querySelector(".popuap-menu");
         const bar = Array.from(document.querySelectorAll(".menu-bar__line"));
-        console.log(bar);
-        if (menu.className === "hidden hidden__active"){
-        menu.className = "hidden";
+        if (menu.className === "popuap-menu popuap-menu__active"){
+        menu.className = "popuap-menu";
         bar.forEach((elem)=>{
         elem.className = "menu-bar__line";
         });
@@ -61,7 +41,7 @@ export class Menu extends React.Component {
         bar.forEach((elem)=>{
          elem.className = "menu-bar__line menu-bar__active";
         })
-        menu.className = "hidden hidden__active";
+        menu.className = "popuap-menu popuap-menu__active";
         }
     }
     render(){
