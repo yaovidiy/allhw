@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 367);
+/******/ 	return __webpack_require__(__webpack_require__.s = 379);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9040,7 +9040,25 @@ module.exports = function (regExp, replace) {
 /* 330 */,
 /* 331 */,
 /* 332 */,
-/* 333 */
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9101,24 +9119,6 @@ function ligther(target) {
 }
 
 /***/ }),
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
 /* 352 */,
 /* 353 */,
 /* 354 */,
@@ -9134,27 +9134,39 @@ function ligther(target) {
 /* 364 */,
 /* 365 */,
 /* 366 */,
-/* 367 */
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(125);
-module.exports = __webpack_require__(368);
+module.exports = __webpack_require__(380);
 
 
 /***/ }),
-/* 368 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(369);
+__webpack_require__(381);
 
-var _lighter = __webpack_require__(333);
+var _lighter = __webpack_require__(351);
 
-var _addlighter = __webpack_require__(370);
+var _addlighter = __webpack_require__(382);
 
-var _lightertoogle = __webpack_require__(371);
+var _lightertoogle = __webpack_require__(383);
 
 var target = document.querySelector('.conteiner');
 
@@ -9165,13 +9177,13 @@ for (var i = 0; i < 5; i++) {
 (0, _lightertoogle.ligtertoogle)(target);
 
 /***/ }),
-/* 369 */
+/* 381 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 370 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9182,7 +9194,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.addligghter = addligghter;
 
-var _lighter = __webpack_require__(333);
+var _lighter = __webpack_require__(351);
 
 function addligghter(target) {
     var button = document.createElement('button');
@@ -9197,7 +9209,7 @@ function addligghter(target) {
 }
 
 /***/ }),
-/* 371 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
