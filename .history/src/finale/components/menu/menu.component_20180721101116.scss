@@ -1,0 +1,18 @@
+.menu {
+    width: 100%;
+    &__items {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media screen  (min-width:993px){
+            flex-direction:row;
+        }
+    }
+    &__item {
+        padding-bottom: 10px;
+        &:first-child {
+            padding-top: 10px;
+        }
+    }
+}

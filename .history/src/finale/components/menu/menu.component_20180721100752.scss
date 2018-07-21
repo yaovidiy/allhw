@@ -1,0 +1,9 @@
+.menu {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &__items {
+        text-align: center;
+    }
+}

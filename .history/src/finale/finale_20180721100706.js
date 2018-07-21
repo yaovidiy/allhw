@@ -3,4 +3,4 @@ import './finale.scss';
 import './components/header/header.component.scss';
 import './components/menu/menu.component.scss';
 //const body = document.getElementById('body').style.Width;
-//console.log(body);
+console.log(body);

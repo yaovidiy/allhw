@@ -1,0 +1,12 @@
+.menu {
+    width: 100%;
+    &__items {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__item {
+        padding-bottom: 10pxl
+    }
+}
