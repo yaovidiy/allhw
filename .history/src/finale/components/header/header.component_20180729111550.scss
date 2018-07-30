@@ -1,23 +1,19 @@
 .header {
     max-width: 1400px;
-    min-height: 100px;
-    padding: 10px 5px;
     margin: 0 auto;
     color: white;
     background-color: black;
+    display: inline-block;
     @media screen and (min-width: 993px){
         background-color: red;
-        h1.logo a {
-            display: none;
-        }
-        a.to_nav {
-            display: none;
-        }
     }
     @media screen and (min-width: 1366px){
         background-image: url('../../../../assets/finale/img/image-top.png');
         height: 535px;
         }
+}
+.right {
+    float: right;
 }
 a.to_nav {
     float: right;
@@ -38,14 +34,4 @@ a.to_nav:hover,
 a.to_nav:focus {
     color: #1c1c1c;
     background: #ccc;
-}
-h1.logo a {
-    color: #d8d8d8;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 22px;
-    float: left;
-    letter-spacing: 0.2em;
 }

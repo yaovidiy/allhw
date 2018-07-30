@@ -1,23 +1,19 @@
 .header {
     max-width: 1400px;
-    min-height: 100px;
-    padding: 10px 5px;
+    padding: 25px 0px;
     margin: 0 auto;
     color: white;
     background-color: black;
     @media screen and (min-width: 993px){
         background-color: red;
-        h1.logo a {
-            display: none;
-        }
-        a.to_nav {
-            display: none;
-        }
     }
     @media screen and (min-width: 1366px){
         background-image: url('../../../../assets/finale/img/image-top.png');
         height: 535px;
         }
+}
+.right {
+    float: right;
 }
 a.to_nav {
     float: right;

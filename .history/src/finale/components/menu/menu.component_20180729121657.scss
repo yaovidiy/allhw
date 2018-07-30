@@ -71,6 +71,14 @@
             list-style: none;
             background-color: transparent;
         }
+        & li a:hover,
+        & li a:focus {
+            background-color: red;
+        }
+        & li a:hover + &__img,
+        & li a:focus + &__img {
+            background-color: transparent;
+        }
     }
 }
 

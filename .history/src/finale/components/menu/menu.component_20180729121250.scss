@@ -36,7 +36,11 @@
     & li:last-child a {
         border-bottom: none;
     }
-
+    & li a:hover,
+    & li a:focus {
+    color: #1c1c1c;
+    background-color: #ccc;
+}
     &__img {
         // background-image: url(../../../../assets/finale/img/fleetster-logo.png);
          display: none;
@@ -70,6 +74,10 @@
         & ul {
             list-style: none;
             background-color: transparent;
+        }
+        & li a:hover
+        & li a:focus {
+            background-color: red;
         }
     }
 }

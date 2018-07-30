@@ -1,0 +1,24 @@
+.menu {
+    width: 100%;
+    &__items {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media screen and (min-width:993px){
+            flex-direction:row;
+        }
+    }
+    &__item {
+        
+        cursor: pointer;
+        @media screen and (min-width:993px) {
+            
+        }
+    }
+}
+.right {
+    float: left;
+}

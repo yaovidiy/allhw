@@ -1,0 +1,11 @@
+.menu {
+    &__items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.img {
+    background-image: url(../../../../assets/finale/img/fleetster-logo.png);
+    height: 30px;
+    background-repeat: no-repeat;
+}
