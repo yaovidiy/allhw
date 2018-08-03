@@ -61,9 +61,11 @@
 }
 @media screen and (min-width: 993px) {
     .search {
+        border: 1px solid red;
         position: absolute;
         top: 180px;
         left:150px;
+        width: 100%;
         &__header {
             text-align: center;
         }
