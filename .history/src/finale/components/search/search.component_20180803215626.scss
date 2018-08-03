@@ -12,10 +12,6 @@
     padding-top: 20px;
     width: 90%;
     margin: 0 auto;
-    &__header {
-        text-align: center;
-        font-weight: 400;
-    }
     &__place {
         padding-bottom: 20px;
         display: flex;
@@ -39,7 +35,8 @@
                 margin-bottom: 10px;
                 height: 30px;
                 &::placeholder{
-                    font-family: 'Material Icons';  
+                    font-family: 'Material Icons';
+                    padding-left: 40%;   
                     font-size: 18px;
                 }
             }
@@ -64,8 +61,8 @@
     .search {
         position: absolute;
         top: 180px;
-        left:10px;
-        width: 100%;
+        left:55px;
+        width: 90%;
         &__header {
             text-align: center;
         }
@@ -81,37 +78,33 @@
             }
         }
         &__form {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            &:nth-child(2){
+                margin-bottom: 0px;
+            }
             &-input {
                 &_town{
-                    width: 380px;
-                    height: 50px;
-                    border-radius: 2px;
-                    background-color: #ffffff;
-                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);        
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 30px;
                     &::placeholder{
-                        content: "pin_drop";
+                        font-family: 'Material Icons';
+                        padding-left: 40%;   
+                        font-size: 25px;
                     }
                 }
                 &_date {
-                    margin-left: 10px;
-                    width: 213px;
-                    height: 50px;
-                    border-radius: 2px;
-                    background-color: #ffffff;
+                    margin-bottom: 10px;
+                    width: 100%;
+                    height: 30px;
                     &::placeholder{
                         padding-left: 40%;
                     }
                 }
             }
             &-button {
-                margin-left: 10px;
-                width: 150px;
-                height: 50px;
-                border-radius: 2px;
-                background-color: #82c141;
+                width: 100%;
+                height: 30px;
+                margin-bottom: 10px;
             }
         }
         

@@ -64,8 +64,8 @@
     .search {
         position: absolute;
         top: 180px;
-        left:10px;
-        width: 100%;
+        left:55px;
+        width: 90%;
         &__header {
             text-align: center;
         }
@@ -96,7 +96,7 @@
                     }
                 }
                 &_date {
-                    margin-left: 10px;
+                    margin-left: 5px;
                     width: 213px;
                     height: 50px;
                     border-radius: 2px;
@@ -107,11 +107,9 @@
                 }
             }
             &-button {
-                margin-left: 10px;
-                width: 150px;
-                height: 50px;
-                border-radius: 2px;
-                background-color: #82c141;
+                width: 100%;
+                height: 30px;
+                margin-bottom: 10px;
             }
         }
         
