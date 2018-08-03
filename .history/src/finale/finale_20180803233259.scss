@@ -1,0 +1,10 @@
+@import './styles/main.scss';
+@import '../common/styles/newgrid.scss';
+@import '../common/styles/mixin.scss';
+@import './components/search/search.component.scss';
+@import './components/content/content.component.scss';
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}

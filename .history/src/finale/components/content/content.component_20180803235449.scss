@@ -1,0 +1,12 @@
+.content {
+    margin: 145px auto;
+    &__text{
+        margin: 0 auto;
+        max-width: 676px;
+        text-align: center;
+        border: 1px solid red;
+        &-txt{
+            padding-bottom: 35px; 
+        }
+    }
+}

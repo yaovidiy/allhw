@@ -1,0 +1,9 @@
+.content {
+    margin: 145px auto;
+    &__text{
+        margin: 0 auto;
+        max-width: 860px;
+        text-align: center;
+        border: 1px solid red;
+    }
+}
