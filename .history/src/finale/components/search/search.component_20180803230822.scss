@@ -41,16 +41,13 @@
                 &::placeholder{
                     padding-left: 40px;
                 }
-                &:hover {
-                    background-image: none;
-                       }
             }
             &_date {
                 margin-bottom: 10px;
                 width: 100%;
                 height: 30px;
                 &::placeholder{
-                    padding-left: 40px;
+                    padding-left: 40%;
                 }
             }
         }
@@ -72,9 +69,8 @@
             text-align: center;
         }
         &__place {
-            width: 25%;    
+            width: 40%;    
             &-item {
-                cursor: pointer;
                 text-align: center;
                 flex-basis: 49%;
                 font-size: 12px;
@@ -94,16 +90,17 @@
                     height: 50px;
                     border-radius: 2px;
                     background-image: url("../../assets/finale/inputs/outline_place_black_18dp.png");
-                    background-position: 4px;
                     background-repeat: no-repeat;
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);        
                     &::placeholder{
                         padding-left: 40px;
                     }
+                    &:hover {
+                        background-color: #ffffff;
+                           }
                 }
                 &_date {
                     background-image: url("../../assets/finale/inputs/outline_event_note_black_18dp.png");
-                    background-position: 4px;
                     background-repeat: no-repeat;                    
                     outline: none;
                     margin-left: 10px;

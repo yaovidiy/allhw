@@ -39,18 +39,16 @@
                 margin-bottom: 10px;
                 height: 30px;
                 &::placeholder{
-                    padding-left: 40px;
+                    font-family: 'Material Icons';  
+                    font-size: 18px;
                 }
-                &:hover {
-                    background-image: none;
-                       }
             }
             &_date {
                 margin-bottom: 10px;
                 width: 100%;
                 height: 30px;
                 &::placeholder{
-                    padding-left: 40px;
+                    padding-left: 40%;
                 }
             }
         }
@@ -66,15 +64,14 @@
     .search {
         position: absolute;
         top: 180px;
-        left:150px;
+        left:10px;
         width: 100%;
         &__header {
             text-align: center;
         }
         &__place {
-            width: 25%;    
+            width: 40%;    
             &-item {
-                cursor: pointer;
                 text-align: center;
                 flex-basis: 49%;
                 font-size: 12px;
@@ -93,24 +90,18 @@
                     width: 380px;
                     height: 50px;
                     border-radius: 2px;
-                    background-image: url("../../assets/finale/inputs/outline_place_black_18dp.png");
-                    background-position: 4px;
-                    background-repeat: no-repeat;
+                    background-color: #ffffff;
                     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);        
                     &::placeholder{
-                        padding-left: 40px;
+                        content: "pin_drop";
                     }
                 }
                 &_date {
-                    background-image: url("../../assets/finale/inputs/outline_event_note_black_18dp.png");
-                    background-position: 4px;
-                    background-repeat: no-repeat;                    
                     outline: none;
                     margin-left: 10px;
                     width: 213px;
                     height: 50px;
                     border-radius: 2px;
-   //                 background-color: red;
                     background-color: #ffffff;
                     &::placeholder{
                      content: "insert_invitation";
