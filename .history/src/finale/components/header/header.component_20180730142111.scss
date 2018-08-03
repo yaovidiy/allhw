@@ -1,10 +1,10 @@
 .header {
     max-width: 1400px;
-    position: relative;
     min-height: 100px;
+    padding: 10px 5px;
     margin: 0 auto;
     color: white;
-    background-color: #1c1c1c;
+    background-color: black;
     @media screen and (min-width: 993px){
         background-image: url('../../../../assets/finale/img/image-top.png');
         h1.logo a {

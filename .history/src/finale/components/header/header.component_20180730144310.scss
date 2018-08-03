@@ -1,10 +1,9 @@
 .header {
     max-width: 1400px;
-    position: relative;
     min-height: 100px;
+    padding: 10px 5px;
     margin: 0 auto;
     color: white;
-    background-color: #1c1c1c;
     @media screen and (min-width: 993px){
         background-image: url('../../../../assets/finale/img/image-top.png');
         h1.logo a {
@@ -42,6 +41,7 @@ a.to_nav:focus {
 h1.logo a {
     color: #d8d8d8;
     text-decoration: none;
+    background-color: #4e4e4e;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;

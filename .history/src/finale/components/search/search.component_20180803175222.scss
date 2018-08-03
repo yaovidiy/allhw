@@ -1,0 +1,17 @@
+.search {
+    width: 90%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    &__form {
+        &-input {
+            &_town{
+                width: 100%;
+            }
+            &_date {
+                width: 100%;
+            }
+        }
+    }
+    
+}
