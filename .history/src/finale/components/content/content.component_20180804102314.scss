@@ -41,19 +41,13 @@
             }
         }
     &__images {
-        //max-width: 1440px;
+        max-width: 1240px;
         margin-top: 164px;
         text-align: center;
         &-header {
             margin-bottom: 65px;
         }
         &-img {
-            &_row{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-            }
             //margin: 0 120px;
            &_conteiner {
             margin: 40px 40px;   
@@ -63,7 +57,7 @@
             background-color: #efefef;
             box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.09);
             &-height {
-                height: 580;
+                height: 540;
                 margin: 40px 40px;   
                 width: 540px;
                 border-radius: 2px;
