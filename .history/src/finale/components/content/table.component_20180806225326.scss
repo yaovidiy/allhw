@@ -1,0 +1,16 @@
+.images {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    &__row {
+        border:1px solid black;
+    }
+    &__item {
+        border: 40px solid red;
+        &-conteiner {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}

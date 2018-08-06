@@ -1,0 +1,16 @@
+.images {
+    width: 1200px;
+    margin: 0 auto;
+    &__row {
+        border:10px solid black;
+    }
+    &__item {
+        border: 40px solid transparent;
+        &-conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
