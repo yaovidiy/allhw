@@ -1,0 +1,86 @@
+.menu {
+    &__items {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__row {
+        flex-basis: 33%;
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        padding: 28px 20px;
+    }
+}
+.nav {
+    & ul {
+        list-style: none;
+        background-color: #1c1c1c;
+        padding: 5px 0;
+    }
+    & li a {
+        display: block;
+        padding: 0 20px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        letter-spacing: 0.1em;
+        line-height: 2em;
+        height: 2em;
+        border-bottom: 1px solid #383838;
+    }
+    & li:last-child a {
+        border-bottom: none;
+    }
+
+    &__img {
+        // background-image: url(../../../../assets/finale/img/fleetster-logo.png);
+         display: none;
+         height: 30px;
+         padding: 20px 150px;
+         background-repeat: no-repeat;
+     }
+}
+@media only screen and (min-width: 993px) {
+    .nav {
+        display: inline;
+        position: absolute;
+        top: 15px;
+        right: 2000px;
+        & li a {
+            display: inline;
+            border: none;
+            font-weight: 400;
+        }
+        & li {
+            display: inline;
+        }
+           &__left {
+            float: left;
+        }
+        &__right {
+            float: right;
+        }
+        &__img {
+            display: inline;
+        }
+        & ul {
+            list-style: none;
+            background-color: transparent;
+        }
+    }
+}
+
+#top {
+    display: none;
+}
+
+ 
+
+ 
+
+ 

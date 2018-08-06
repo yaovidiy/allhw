@@ -1,0 +1,8 @@
+.header {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    background-color: darkslategray;
+    @media screen and (min-width: 993px){
+        background-image: url('../../../../assets/finale/img/section-header.png');    }
+}

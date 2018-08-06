@@ -1,15 +1,17 @@
+@import '../../common/styles/mixin.scss';
 $deg:40deg;
 .page-wrapper {
-    width: 100%;
-    min-height: 500px;
+    @include pageWrapper;
     background-color: #ffffff;
     position: relative;
+    min-height: 500px;
 }
 .page-header {
-    min-height: 100px;
     background-color: black;
+    min-height: 300px;
     text-align: center;
     color: white;
+
 }
 .menu-bar {
     position: absolute;
@@ -36,6 +38,64 @@ $deg:40deg;
         background-color: white;
         &:nth-child(2){
         transform: rotate($deg);
+        }
+    }
+    @include mobile {
+        display: none;
+    }
+}
+//starting mobile size menu
+$item_margin:20px;
+
+.popuap-menu {
+    transition: all 0.5s;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    overflow: hidden;
+    @include mobile {
+        overflow: visible;
+        //position: relative;
+    }
+    &__active {
+        height: 100%;
+        transition: all 0.5s;
+        position: absolute;
+    }
+}
+.mobile-menu {
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $item_margin/2 $item_margin/2;
+    @include mobile {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__icon {
+        height: 30px;
+        width:150px;
+        margin: $item_margin auto;
+        background-image: url("../../assets/finale/img/fleetster-logo.png");
+        background-repeat: no-repeat;
+        @include mobile {
+            display: none;
+        }
+    }
+    &__item {
+        transition: all 0.5s; 
+        margin-bottom: $item_margin;
+        &-register {
+        margin-bottom: $item_margin;
+        }
+        &-active {
+        padding: $item_margin;
+        margin-bottom: $item_margin;
+        background-color: rgb(8, 141, 123);
+        transition: all 0.5s; 
         }
     }
 }

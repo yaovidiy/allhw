@@ -1,0 +1,18 @@
+.menu {
+    &__items {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__row {
+        flex-basis: 33%;
+        display: flex;
+    }
+}
+.img {
+   // background-image: url(../../../../assets/finale/img/fleetster-logo.png);
+    height: 30px;
+    padding: 20px 150px;
+    background-repeat: no-repeat;
+}
