@@ -1,6 +1,3 @@
-#top {
-    display: block;
-}
 .menu {
     &__items {
         display: flex;
@@ -33,7 +30,7 @@
         letter-spacing: 0.1em;
         letter-spacing: 0.1em;
         line-height: 2em;
-        height: 2em;
+        height: 2e  m;
         border-bottom: 1px solid #383838;
     }
     & li:last-child a {
@@ -76,12 +73,11 @@
             background-color: transparent;
         }
     }
-    #top {
-        display: none;
-    }
 }
 
-
+#top {
+    display: none;
+}
 
  
 

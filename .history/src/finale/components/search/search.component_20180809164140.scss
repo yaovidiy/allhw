@@ -35,7 +35,7 @@
         }
         &-input {
             &_town{
-                    background-repeat: no-repeat;
+                background-repeat: no-repeat;
                 background-image: url("../../assets/finale/inputs/outline_place_black_18dp.png");
                 width: 100%;
                 margin-bottom: 10px;
@@ -110,7 +110,7 @@
                     width: 213px;
                     height: 50px;
                     border-radius: 2px;
-   //                 background-color: red;
+ //                 background-color: red;
                     background-color: #ffffff;
                     &::placeholder{
                      content: "insert_invitation";
@@ -128,4 +128,4 @@
         }
         
     }
-}   
+}

@@ -10,16 +10,20 @@
         border:10px solid black;
     }
     &__item {
-        border: 10px solid transparent;
-        width: 290px;
+        border: 40px solid transparent;
+        width: 270px;
         //background-color: red;
-        height: 290px;
-
-        &-conteiner {
-            background-image: url("../../assets/finale/img/destination-card.png");
+        height: 270px;
+        &-hidden {
             overflow: hidden;
-            width: 100%;  
-            height: 100%;
+            transition: all 0.5s;
+            height: 0px;
+  
+        }
+        &-conteiner {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;    
             opacity: 1;
             border-radius: 2px;
             //background-color: red;
@@ -27,8 +31,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: all 5s;
             justify-content: center;
+            &:hover {
+                height: 100%;
+                transition: all 0.5s;
+            }
         }
         &-head {
             padding-bottom: 17px; 
@@ -43,7 +50,6 @@
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
         &-content {
-            cursor: pointer;
             color: #ffffff;
             padding: 10px 10px;  
             width: 123px;
